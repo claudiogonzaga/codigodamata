@@ -108,14 +108,6 @@ fields:
       variable: requeridos[i].existing_or_new
       is: New
     required: False
-  - País: requeridos[i].address.country
-    code: |
-      countries_list()
-    default: "Brazil"
-    required: False
-    show if:
-      variable: requeridos[i].existing_or_new
-      is: New
   - Telefone celular: requeridos[i].mobile_number
     required: False
     show if:
